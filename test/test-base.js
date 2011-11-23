@@ -52,7 +52,11 @@ function isEqual(config){
 
 function catchException(config){
     try{
-        config.exec(config.params);
+        if(config.caller){
+            config.exec.call(config.caller,config.params);
+        }else{
+            config.exec(config.params);
+        }
         outFailed(config.msg+' No error is thrown!')
     }catch(msg){ 
         if(!config.err_msg || msg == config.err_msg){
