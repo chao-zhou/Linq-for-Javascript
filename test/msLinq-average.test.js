@@ -30,10 +30,12 @@
         msg:'test.average(function(i){return i*2;})'
      });  
     
-    catchException( {
-        exec:test.average,
-        params:"i=>i+'a'",
-        msg:"test.average(i=>i+'a')"
-    });
+    isEqual({
+        val1:isNaN(test.average("i=>i+'a'")),
+        val2:true,
+        strict:true,
+        msg:"isNaN(test.average(i=>i+'a'))"
+     });  
+   
     
 })(this.window || exports, this.window === this ? "msLinq" : "Exec");
