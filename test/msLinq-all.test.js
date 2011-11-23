@@ -17,7 +17,7 @@
     //      fail:'failed : function',
     //      });   
     var test = msLinq(new Array(1,2,3,4,5,6,7,8,9));
-    
+    out("Test msLinq().all ")
     isEqual({
         val1:test.all("i=>i<10"),
         val2:true,

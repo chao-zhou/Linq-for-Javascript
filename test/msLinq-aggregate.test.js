@@ -10,7 +10,7 @@
     var val = '';
     var expect = 'c,b,a';
     
-    out("Test msLinq.aggregate ")
+    out("Test msLinq().aggregate ")
     val = obj.aggregate(function(seq,next){return next+','+seq;});
     isEqual({
         val1:val,

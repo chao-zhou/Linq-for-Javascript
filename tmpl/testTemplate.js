@@ -13,8 +13,7 @@
     //      val1:actual,
     //      val2:expect,
     //      strict:true,
-    //      pass:'passed : function',
-    //      fail:'failed : function',
+    //      msg:'description'
     //      });   
     
     
