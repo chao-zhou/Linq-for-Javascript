@@ -1,0 +1,15 @@
+This is a implemention of MS LinQ in Javascript.
+
+Ex:
+
+var linqObj = msLinq(new Array(1,2,3));
+
+linq.all('i=>i<4');
+
+//true
+
+linq.all(function(item){
+	return item > 2;
+});
+
+//false
