@@ -123,4 +123,29 @@
         msg:"msLinq.func(null)"
     });
 
+    out("Test msLinq().each")
+    var test = msLinq(new Array(1,2,3));
+    var rslt;
+    
+    test.each(function(item,index){rslt = item;})
+    isEqual( {
+        val1:rslt,
+        val2:3,
+        msg:' test.each(function(item,index){rslt = item;})'
+    });
+    
+    test.each(function(item,index){rslt = item;return true;})
+    isEqual( {
+        val1:rslt,
+        val2:3,
+        msg:' test.each(function(item,index){rslt = item; return true})'
+    });
+    
+    test.each(function(item,index){rslt = item;return false;})
+    isEqual( {
+        val1:rslt,
+        val2:1,
+        msg:' test.each(function(item,index){rslt = item; return false})'
+    });
+    
 })(this.window || exports, this.window === this ? "msLinq" : "Exec");
