@@ -11,6 +11,8 @@
         this.items = dataItems;
     };
     
+    msLinq.version = '0.0.0.1';
+    
     msLinq.isFunc = function(func) {
         return (typeof func).toLowerCase() == 'function';
     };
