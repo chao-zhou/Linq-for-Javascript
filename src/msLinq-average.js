@@ -11,10 +11,10 @@
         func = msLinq.func(func);
         
         var sum = 0;       
-        for (var index = 0, length = this.items.length; index < length; index++) {
-            sum += func(this.items[index]);
-        }
-        
+        this.each(function(item){
+            sum += func(item);
+        });
+         
         return sum/this.items.length; 
     });
       
