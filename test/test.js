@@ -7,3 +7,4 @@ loadJs("test/msLinq-aggregate.test.js");
 loadJs("test/msLinq-all.test.js")
 loadJs("test/msLinq-any.test.js")
 loadJs("test/msLinq-average.test.js")
+loadJs("test/msLinq-concat.test.js")
