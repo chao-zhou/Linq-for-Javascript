@@ -10,7 +10,7 @@
 
         this.items = dataItems;
     };
-
+    
     msLinq.isFunc = function(func) {
         return (typeof func).toLowerCase() == 'function';
     };
@@ -41,4 +41,12 @@
         }
         return clause;
     }
+    
+    //Prototype method
+    msLinq.addFunc('each',function(func){
+        for(var index = 0, length= this.items.length; index<length; index++){
+            if(func(this.items[index],index) === false){ break;}
+        }
+    })
+    
 })(this.window || exports, this.window === this ? "msLinq" : "Exec");
