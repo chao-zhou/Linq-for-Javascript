@@ -8,7 +8,7 @@
             return new msLinq(dataItems);
         }
 
-        this.items = dataItems;
+        this.items = dataItems || new Array();
     };
     
     msLinq.version = '0.0.0.1';
