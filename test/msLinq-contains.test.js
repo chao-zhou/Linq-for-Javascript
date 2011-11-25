@@ -9,6 +9,7 @@
     
     var test = msLinq(new Array(1,2,3));
     
+    out("Test msLinq().contains ")
     isEqual({
         val1:test.contains(2),
         val2:true,

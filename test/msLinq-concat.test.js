@@ -11,6 +11,7 @@
     var test2 = msLinq(new Array(3,4,5));
     var test3 = new Array(3,4,5);
     
+    out("Test msLinq().concat ")
     isEqual({
         val1:test1.concat(test2).items,
         val2:'1,2,3,3,4,5',
