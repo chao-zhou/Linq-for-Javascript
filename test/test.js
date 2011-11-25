@@ -8,4 +8,6 @@
 //loadJs("test/msLinq-any.test.js")
 //loadJs("test/msLinq-average.test.js")
 //loadJs("test/msLinq-concat.test.js")
-loadJs("test/msLinq-contains.test.js")
+//loadJs("test/msLinq-contains.test.js")
+//loadJs("test/msLinq-count.test.js")
+loadJs("test/msLinq-defaultIfEmpty.test.js")
